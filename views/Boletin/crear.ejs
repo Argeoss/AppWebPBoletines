@@ -1,0 +1,53 @@
+</br>
+</br>
+<div class="container">
+    <div class="row">
+        <div class="col col-md-5">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">
+                        CrearBoletin
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <form action="/Boletin/Created" method="POST" novalidate="novalidate" id="formSignUp" enctype="multipart/form-data">
+                        <div id="errorSignUp">
+
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label" for="email">Titulo</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                                <input class="form-control" placeholder="Magic Mike" name="Titulo" id="emailSignUp" type="email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="email">Descripcion</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                                <textarea class="form-control" rows="3" name="Descripcion"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="email">imagen</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                                <input type="file" class="form-control-file" id="FormControlFile1" name="Img">
+                            </div>
+                        </div>
+
+
+
+
+
+                        <button type="submit" id="btnSignUp" class="btn btn-primary" style="width: 127px;">Crear</button>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

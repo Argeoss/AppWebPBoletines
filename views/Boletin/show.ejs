@@ -1,0 +1,48 @@
+<div class="container">
+    <h2>Descripcion del boletin</h2>
+    <ul>
+        <li>
+            <%= boletin.Titulo %>
+        </li>
+        <li>
+            <%= boletin.Descripcion %>
+        </li>
+    </ul>
+    <form action="/boletin/edit/<%= Boletin.id %>" method="POST" accept-charset="utf-8">
+        <button type="submit" class="btn btn-success">Editar</button>
+    </form>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-md-5">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form action="/Comentarios/Agregar" method="POST" novalidate="novalidate" id="formSignUp" enctype="multipart/form-data">
+                        <div id="errorSignUp">
+
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label" for="email">usuario</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                                <input class="form-control" placeholder="Magic Mike" name="usuario" id="emailSignUp" type="email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="email">Contenido</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                                <textarea class="form-control" rows="3" name="contenido"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" id="btnSignUp" class="btn btn-primary" style="width: 127px;">Publicar</button>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
